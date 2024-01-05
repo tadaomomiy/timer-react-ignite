@@ -59,31 +59,31 @@
       2. Uncontrolled
         * Take the input value just when we need them, no real time update
         - Dashboards, ou complex forms
-    15. Forms library - React hook form - can be used in controlled or uncontrolled method
-      * npm i react-hook-form
-    16. Register is a function that receive the input name and return some methods that can be used to handle with input in JS as onChange, onBlur, onFocus
-    17. Use watch from react hook form to see changes in the input
-    18. Validation library yup, joi, zod.
-      * npm i zod
-      to integrate the hook forms is necessary a resolver library provided from react hook form
-      * npm i @hookform/resolvers
-    19. Use typescript to assign the fields inside a interface through a generic.
-    20. Function from zod which extract the type of our form from a validation schema. "...\Home\index.tsx" line 25
-    21. Use a interface when define the validation object e the type when create a type based in another reference - good practice
-    22. The infer on typescript means that defines automatic something ( automatizate a process determine the type of something)
-    23. The react hook form has a function that reset the form, just call the function inside a submit function and will clean the fields to the original value. * This function insert the defautValues defined before that means that if the field value is not defined the field will not reset.
-    24. Set the state with the active cycle for a new one, that way we don't need acess all the list and check one by one in a new cycle set.
-    25. Using hook useEffect -> Side-effect, It will be called everytime the component is rendered. It's pretty commum use the useEffect wrong - instead a useState for example,  https://pt-br.legacy.reactjs.org/docs/hooks-effect.html
-    26. Prop Drilling -> When we have a lot of props just for comunication through components - can be harmful for maintenance porpouses.
-    27. React Concept - called Context API -> Allows share information through MANY components on the same time, as a global variable per say, which all components that in the same context can access, modify and when modified changes all the components that depend on this info are updated.
-    28. React hook form has his on context that can be used too for simple things
-    29. Context API through routes - when the information is necessary in others route pages (in this case the cycles) create a context component which will be responsible to pass this information through all the routes, and call on the app component
-    30. List all the context data in the history
-    31. userReducer is used to keep more complex informations and actions that demands to many code lines to change them. Has been applied in the cycles in that app.
-    32. useReducer ( reducer is a pattern that can be used in many context and aplications)
-    33. Save objects on reducer and mark the finished cycle.
-    34. Create ActionTypes using enum from typescript
-    35. Split actions from dispatch and standardization in a definition file
-    36. Use Immer library to deal with datas from the app and no worry with imutability from react.
-      *npm i immer
-    37. Save some informations using localStorage from the browser, and not lose all the cycles history on the page update.
+  15. Forms library - React hook form - can be used in controlled or uncontrolled method
+    * npm i react-hook-form
+  16. Register is a function that receive the input name and return some methods that can be used to handle with input in JS as onChange, onBlur, onFocus
+  17. Use watch from react hook form to see changes in the input
+  18. Validation library yup, joi, zod.
+    * npm i zod
+    to integrate the hook forms is necessary a resolver library provided from react hook form
+    * npm i @hookform/resolvers
+  19. Use typescript to assign the fields inside a interface through a generic.
+  20. Function from zod which extract the type of our form from a validation schema. "...\Home\index.tsx" line 25
+  21. Use a interface when define the validation object e the type when create a type based in another reference - good practice
+  22. The infer on typescript means that defines automatic something ( automatizate a process determine the type of something)
+  23. The react hook form has a function that reset the form, just call the function inside a submit function and will clean the fields to the original value. * This function insert the defautValues defined before that means that if the field value is not defined the field will not reset.
+  24. Set the state with the active cycle for a new one, that way we don't need acess all the list and check one by one in a new cycle set.
+  25. Using hook useEffect -> Side-effect, It will be called everytime the component is rendered. It's pretty commum use the useEffect wrong - instead a useState for example,  https://pt-br.legacy.reactjs.org/docs/hooks-effect.html
+  26. Prop Drilling -> When we have a lot of props just for comunication through components - can be harmful for maintenance porpouses.
+  27. React Concept - called Context API -> Allows share information through MANY components on the same time, as a global variable per say, which all components that in the same context can access, modify and when modified changes all the components that depend on this info are updated.
+  28. React hook form has his on context that can be used too for simple things
+  29. Context API through routes - when the information is necessary in others route pages (in this case the cycles) create a context component which will be responsible to pass this information through all the routes, and call on the app component
+  30. List all the context data in the history
+  31. userReducer is used to keep more complex informations and actions that demands to many code lines to change them. Has been applied in the cycles in that app.
+  32. useReducer ( reducer is a pattern that can be used in many context and aplications)
+  33. Save objects on reducer and mark the finished cycle.
+  34. Create ActionTypes using enum from typescript
+  35. Split actions from dispatch and standardization in a definition file
+  36. Use Immer library to deal with datas from the app and no worry with imutability from react.
+    *npm i immer
+  37. Save some informations using localStorage from the browser, and not lose all the cycles history on the page update.
