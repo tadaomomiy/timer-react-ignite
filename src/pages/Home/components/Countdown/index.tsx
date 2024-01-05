@@ -53,6 +53,11 @@ export function Countdown() {
   const minutes = String(minutesAmount).padStart(2, '0')
   const seconds = String(secondsAmount).padStart(2, '0')
 
+  const firstNumberMinutes = minutes[0]
+  const secondNumberMinutes = minutes[1]
+  const firstNumberSeconds = seconds[0]
+  const secondNumberSeconds = seconds[1]
+
   useEffect(() => {
     if (activeCycle) {
       document.title = `${minutes}:${seconds}`
@@ -61,11 +66,11 @@ export function Countdown() {
 
   return (
     <CountdownContainer>
-      <span>{minutes[0]}</span>
-      <span>{minutes[1]}</span>
+      <span>{firstNumberMinutes}</span>
+      <span>{secondNumberMinutes}</span>
       <Separator>:</Separator>
-      <span>{seconds[0]}</span>
-      <span>{seconds[0]}</span>
+      <span>{firstNumberSeconds}</span>
+      <span>{secondNumberSeconds}</span>
     </CountdownContainer>
   )
 }
