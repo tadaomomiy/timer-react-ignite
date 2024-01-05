@@ -6,9 +6,9 @@ import { DefaultLayout } from './layouts/DefaultLayout/index'
 export function Router() {
   return (
     <Routes>
-      <Route path="/" element={<DefaultLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/history" element={<History />} />
+      <Route path="/timer-react-ignite/" element={<DefaultLayout />}>
+        <Route path="/timer-react-ignite/" element={<Home />} />
+        <Route path="/timer-react-ignite/history" element={<History />} />
       </Route>
     </Routes>
   )
